@@ -10,11 +10,18 @@ namespace MyHero {
         SceneMap();
         ~SceneMap();
     public:
+        bool init(cocos2d::Node* pRoot, const char* filename);
+        
         bool load(const char* filename);
         
         void release();
     protected:
-        MapInfo*        m_pMapInfo;
+        cocos2d::Texture2D* countTileTex(int tileid, cocos2d::Rect& rect);
+    protected:
+        MapInfo*                            m_pMapInfo;
+        
+        std::vector<cocos2d::Node*>         m_pLstLayer;
+        std::vector<cocos2d::Texture2D*>    m_pLstTexture;
     };
     
 }

@@ -26,6 +26,9 @@ namespace MyHero {
         
         int             firstgid;
         int             count;
+        
+        int             imageWidth;
+        int             imageHeight;
     };
     
     struct MapInfo {

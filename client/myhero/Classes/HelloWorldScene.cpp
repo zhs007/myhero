@@ -1,5 +1,7 @@
 #include "HelloWorldScene.h"
 
+#include "scene/SceneMap.h"
+
 USING_NS_CC;
 
 Scene* HelloWorld::createScene()
@@ -26,6 +28,10 @@ bool HelloWorld::init()
     {
         return false;
     }
+    
+    MyHero::SceneMap* pMap = new MyHero::SceneMap;
+    
+    pMap->init(this, "scene/tiled001.json");
     
 //    Size visibleSize = Director::getInstance()->getVisibleSize();
 //    Vec2 origin = Director::getInstance()->getVisibleOrigin();

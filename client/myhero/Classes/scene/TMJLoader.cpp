@@ -35,6 +35,13 @@ namespace MyHero {
                         
                         li.pData = NewLayerData(li.width, li.height);
                         
+                        if (layers[i].HasMember("data") && layers[i]["data"].IsArray()) {
+                            rapidjson::Value& data = layers[i]["data"];
+                            for (rapidjson::SizeType i = 0; i < data.Size(); ++i) {
+                                li.pData->data[i / li.width][i % li.width] = data[i].GetInt();
+                            }
+                        }
+                        
                         pMapInfo->lstLayerInfo.push_back(li);
                     }
                 }
@@ -51,6 +58,9 @@ namespace MyHero {
                         
                         ii.firstgid = getAsInt(tilesets[i], "firstgid");
                         ii.count = getAsInt(tilesets[i], "tilecount");
+                        
+                        ii.imageWidth = getAsInt(tilesets[i], "imagewidth");
+                        ii.imageHeight = getAsInt(tilesets[i], "imageheight");
                         
                         pMapInfo->lstImageInfo.push_back(ii);
                     }
