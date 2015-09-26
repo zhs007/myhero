@@ -26,3 +26,16 @@
 *.exe
 *.out
 *.app
+
+# nodejs项目依赖模块
+tools/csvtools/node_modules
+
+# webstorm项目文件
+.idea
+
+# xcode项目文件
+xcuserdata
+project.xcworkspace
+
+# excel临时文件
+~$*.xlsx
