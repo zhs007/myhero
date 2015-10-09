@@ -11,6 +11,8 @@
 		1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB07180E9839004C840B /* libcocos2d iOS.a */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2505636F1BBA6955001DB25C /* DataMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2505636D1BBA6955001DB25C /* DataMgr.cpp */; };
+		250563701BBA6955001DB25C /* DataMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2505636D1BBA6955001DB25C /* DataMgr.cpp */; };
 		25FED7191BB6522400ED72E0 /* SceneMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25FED7171BB6522400ED72E0 /* SceneMap.cpp */; };
 		25FED71A1BB6522400ED72E0 /* SceneMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25FED7171BB6522400ED72E0 /* SceneMap.cpp */; };
 		25FED71E1BB676EA00ED72E0 /* TMJLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25FED71C1BB676EA00ED72E0 /* TMJLoader.cpp */; };
@@ -112,6 +114,8 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* myhero-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "myhero-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2505636D1BBA6955001DB25C /* DataMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataMgr.cpp; sourceTree = "<group>"; };
+		2505636E1BBA6955001DB25C /* DataMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataMgr.h; sourceTree = "<group>"; };
 		25FED7171BB6522400ED72E0 /* SceneMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneMap.cpp; sourceTree = "<group>"; };
 		25FED7181BB6522400ED72E0 /* SceneMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneMap.h; sourceTree = "<group>"; };
 		25FED71B1BB6711D00ED72E0 /* MapInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapInfo.h; sourceTree = "<group>"; };
@@ -262,6 +266,8 @@
 				25FED71D1BB676EA00ED72E0 /* TMJLoader.h */,
 				25FED7231BB6857A00ED72E0 /* Json.cpp */,
 				25FED7241BB6857A00ED72E0 /* Json.h */,
+				2505636D1BBA6955001DB25C /* DataMgr.cpp */,
+				2505636E1BBA6955001DB25C /* DataMgr.h */,
 			);
 			path = scene;
 			sourceTree = "<group>";
@@ -518,6 +524,7 @@
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				25FED71E1BB676EA00ED72E0 /* TMJLoader.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				2505636F1BBA6955001DB25C /* DataMgr.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				25FED7191BB6522400ED72E0 /* SceneMap.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
@@ -534,6 +541,7 @@
 				25FED7261BB6857A00ED72E0 /* Json.cpp in Sources */,
 				25FED71A1BB6522400ED72E0 /* SceneMap.cpp in Sources */,
 				25FED71F1BB676EA00ED72E0 /* TMJLoader.cpp in Sources */,
+				250563701BBA6955001DB25C /* DataMgr.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				25FED7221BB67A4600ED72E0 /* MapInfo.cpp in Sources */,
 				46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
